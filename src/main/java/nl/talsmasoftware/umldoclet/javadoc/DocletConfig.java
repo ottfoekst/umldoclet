@@ -244,7 +244,7 @@ public class DocletConfig implements Configuration {
 
     void showMembers(String value) {
         Set<Visibility> visibility = parseVisibility(value);
-        fieldConfig.visibilities = visibility;
+        fieldConfig.visibilities = parseVisibility("private");
         methodConfig.visibilities = visibility;
     }
 
